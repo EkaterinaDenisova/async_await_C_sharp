@@ -1,6 +1,6 @@
 ﻿namespace async_await
 {
-    partial class Form1
+    partial class Form_copy
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -37,23 +37,26 @@
             this.textBox_write = new System.Windows.Forms.TextBox();
             this.label_read = new System.Windows.Forms.Label();
             this.label_write = new System.Windows.Forms.Label();
+            this.label_progress = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button_res
             // 
-            this.button_res.Location = new System.Drawing.Point(249, 274);
+            this.button_res.Location = new System.Drawing.Point(332, 337);
+            this.button_res.Margin = new System.Windows.Forms.Padding(4);
             this.button_res.Name = "button_res";
-            this.button_res.Size = new System.Drawing.Size(75, 23);
+            this.button_res.Size = new System.Drawing.Size(100, 28);
             this.button_res.TabIndex = 0;
-            this.button_res.Text = "Вычислить";
+            this.button_res.Text = "Копировать";
             this.button_res.UseVisualStyleBackColor = true;
             this.button_res.Click += new System.EventHandler(this.button_res_Click);
             // 
             // button_stop
             // 
-            this.button_stop.Location = new System.Drawing.Point(462, 274);
+            this.button_stop.Location = new System.Drawing.Point(616, 337);
+            this.button_stop.Margin = new System.Windows.Forms.Padding(4);
             this.button_stop.Name = "button_stop";
-            this.button_stop.Size = new System.Drawing.Size(75, 23);
+            this.button_stop.Size = new System.Drawing.Size(100, 28);
             this.button_stop.TabIndex = 1;
             this.button_stop.Text = "Остановить";
             this.button_stop.UseVisualStyleBackColor = true;
@@ -61,16 +64,18 @@
             // 
             // progressBar
             // 
-            this.progressBar.Location = new System.Drawing.Point(127, 346);
+            this.progressBar.Location = new System.Drawing.Point(169, 426);
+            this.progressBar.Margin = new System.Windows.Forms.Padding(4);
             this.progressBar.Name = "progressBar";
-            this.progressBar.Size = new System.Drawing.Size(552, 23);
+            this.progressBar.Size = new System.Drawing.Size(736, 28);
             this.progressBar.TabIndex = 2;
             // 
             // button_read
             // 
-            this.button_read.Location = new System.Drawing.Point(530, 103);
+            this.button_read.Location = new System.Drawing.Point(707, 127);
+            this.button_read.Margin = new System.Windows.Forms.Padding(4);
             this.button_read.Name = "button_read";
-            this.button_read.Size = new System.Drawing.Size(75, 23);
+            this.button_read.Size = new System.Drawing.Size(100, 28);
             this.button_read.TabIndex = 3;
             this.button_read.Text = "Файл";
             this.button_read.UseVisualStyleBackColor = true;
@@ -78,9 +83,10 @@
             // 
             // button_write
             // 
-            this.button_write.Location = new System.Drawing.Point(530, 150);
+            this.button_write.Location = new System.Drawing.Point(707, 185);
+            this.button_write.Margin = new System.Windows.Forms.Padding(4);
             this.button_write.Name = "button_write";
-            this.button_write.Size = new System.Drawing.Size(75, 23);
+            this.button_write.Size = new System.Drawing.Size(100, 28);
             this.button_write.TabIndex = 4;
             this.button_write.Text = "Файл";
             this.button_write.UseVisualStyleBackColor = true;
@@ -88,41 +94,56 @@
             // 
             // textBox_read
             // 
-            this.textBox_read.Location = new System.Drawing.Point(374, 106);
+            this.textBox_read.Location = new System.Drawing.Point(499, 130);
+            this.textBox_read.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_read.Name = "textBox_read";
-            this.textBox_read.Size = new System.Drawing.Size(136, 20);
+            this.textBox_read.Size = new System.Drawing.Size(180, 22);
             this.textBox_read.TabIndex = 5;
             // 
             // textBox_write
             // 
-            this.textBox_write.Location = new System.Drawing.Point(374, 152);
+            this.textBox_write.Location = new System.Drawing.Point(499, 187);
+            this.textBox_write.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_write.Name = "textBox_write";
-            this.textBox_write.Size = new System.Drawing.Size(136, 20);
+            this.textBox_write.Size = new System.Drawing.Size(180, 22);
             this.textBox_write.TabIndex = 6;
             // 
             // label_read
             // 
             this.label_read.AutoSize = true;
-            this.label_read.Location = new System.Drawing.Point(246, 109);
+            this.label_read.Location = new System.Drawing.Point(333, 133);
+            this.label_read.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_read.Name = "label_read";
-            this.label_read.Size = new System.Drawing.Size(100, 13);
+            this.label_read.Size = new System.Drawing.Size(123, 16);
             this.label_read.TabIndex = 7;
             this.label_read.Text = "Файл для чтения: ";
             // 
             // label_write
             // 
             this.label_write.AutoSize = true;
-            this.label_write.Location = new System.Drawing.Point(250, 155);
+            this.label_write.Location = new System.Drawing.Point(333, 191);
+            this.label_write.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_write.Name = "label_write";
-            this.label_write.Size = new System.Drawing.Size(99, 13);
+            this.label_write.Size = new System.Drawing.Size(121, 16);
             this.label_write.TabIndex = 8;
             this.label_write.Text = "Файл для записи:";
             // 
-            // Form1
+            // label_progress
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.label_progress.AutoSize = true;
+            this.label_progress.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_progress.Location = new System.Drawing.Point(166, 467);
+            this.label_progress.Name = "label_progress";
+            this.label_progress.Size = new System.Drawing.Size(44, 20);
+            this.label_progress.TabIndex = 9;
+            this.label_progress.Text = "label";
+            // 
+            // Form_copy
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.label_progress);
             this.Controls.Add(this.label_write);
             this.Controls.Add(this.label_read);
             this.Controls.Add(this.textBox_write);
@@ -132,8 +153,9 @@
             this.Controls.Add(this.progressBar);
             this.Controls.Add(this.button_stop);
             this.Controls.Add(this.button_res);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "Form_copy";
+            this.Text = "Копирование файлов";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -150,6 +172,7 @@
         private System.Windows.Forms.TextBox textBox_write;
         private System.Windows.Forms.Label label_read;
         private System.Windows.Forms.Label label_write;
+        private System.Windows.Forms.Label label_progress;
     }
 }
 
