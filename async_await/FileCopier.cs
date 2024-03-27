@@ -6,6 +6,8 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
+// author: Денисова Екатерина
+
 namespace async_await
 {
     // класс для копирования файлов
